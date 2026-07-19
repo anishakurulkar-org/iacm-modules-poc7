@@ -18,6 +18,15 @@ variable "bucket_name" {
 
 }
 
+variable "force_destroy" {
+
+  description = "Whether to delete the bucket even if it contains objects"
+
+  type        = bool
+
+  default     = false
+}
+
 variable "tags" {
 
   description = "Common resource tags"
@@ -37,3 +46,4 @@ variable "enable_versioning" {
   default = true
 
 }
+
