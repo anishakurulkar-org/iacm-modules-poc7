@@ -18,6 +18,14 @@ variable "bucket_name" {
 
 }
 
+variable "aws_region" {
+
+  description = "AWS Region"
+
+  type        = string
+
+}
+
 variable "force_destroy" {
 
   description = "Whether to delete the bucket even if it contains objects"
