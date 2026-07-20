@@ -13,21 +13,6 @@ variable "instance_type" {
   type        = string
 }
 
-variable "subnet_id" {
-  description = "Subnet ID"
-  type        = string
-}
-
-variable "security_group_ids" {
-  description = "Security Group IDs"
-  type        = list(string)
-}
-
-variable "key_name" {
-  description = "SSH Key Pair"
-  type        = string
-}
-
 variable "tags" {
   description = "Common Tags"
   type        = map(string)
